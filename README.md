@@ -1,9 +1,13 @@
 # ELK-Stack-Project
 Elk Stack Project
+
 Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
  
+ ![Week13](https://user-images.githubusercontent.com/82536342/137604648-27ad74d8-29f3-4819-bed5-02f9da8e5503.png)
+
+
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the following ansible playbook file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -32,7 +36,8 @@ Filebeat: Monitors system logs
 Metricbeat: Monitors VM metrics
 
 The configuration details of each machine may be found below.
-_ | Name                 | Function    | IP Address | Operating System |
+
+| Name                 | Function    | IP Address | Operating System |
 |----------------------|-------------|------------|------------------|
 | Jump-Box-Provisioner | Gateway     | 10.1.0.4   | Linux(Ubuntu)    |
 | Web-1-New            | DVWA server | 10.1.0.5   | Linux(Ubuntu)    |
@@ -64,6 +69,7 @@ Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it reduces chances of human error when configuring the machine.
 
+
 The playbook implements the following tasks:
 -	install docker.io using apt
 -	install python3-pip using apt
@@ -72,6 +78,8 @@ The playbook implements the following tasks:
 -	download and launch the docker container for the ELK stack
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.  
+
+![docker-ps](https://user-images.githubusercontent.com/82536342/137604669-bc770b71-96da-4977-a693-8156f8fe7562.png)
 
 
 Target Machines & Beats
